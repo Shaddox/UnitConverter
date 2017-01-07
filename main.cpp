@@ -11,6 +11,25 @@ int main() {
         code = prettifyAndInteractWithMenu(optiuni);
         std::cout << code;
         std::vector<std::string> subOptions;
+        switch(code)
+        {
+            case 1 : subOptions = {"Metri - Yards"}; break;
+            default: continue;
+        }
+//        if (code == optiuni.size()) { break;}
+
+        subOptions.insert(subOptions.end(), "Inapoi");
+        int subCode = 0;
+
+        while (subCode != subOptions.size())
+        {
+            subCode = prettifyAndInteractWithMenu(subOptions);
+            //mic bugfix pentru faptul ca la inputul maxim deja nu mai are sens...
+            if (subCode == subOptions.size()) { continue; }
+
+            double result = treatSelectionCase(code, subCode);
+            std::cout << "Rezultatul conversiei este: "<<result;
+        }
 
     }
 

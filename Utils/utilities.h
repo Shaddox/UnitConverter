@@ -11,3 +11,5 @@
 #endif //UNTITLED_UTILITIES_H
 
 int prettifyAndInteractWithMenu(std::vector<std::string> menuEntries);
+
+double treatSelectionCase(int mainCode, int subCode);

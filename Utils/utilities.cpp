@@ -4,6 +4,7 @@
 
 #include "utilities.h"
 #include "../Converters/lungime.h"
+#include "../Converters/arie.h"
 #include <iostream>
 
 
@@ -32,12 +33,25 @@ double treatSelectionCase(int mainCode, int subCode)
     if (mainCode == 1)
         switch(subCode){
             //meters to yards
-            case 1: result = convertMetersToYards(unit);
+            case 1:
+                std::cout << unit << " metri" ;
+                convertMetersToYards(unit); break;
+                //km to miles
+            case 2:
+                std::cout << unit << " kilometri";
+                convertKilometersToMiles(unit); break;
             default: break;
         }
 
     if (mainCode == 2)
         switch(subCode){
+            //sqm to acres
+            case 1:
+            std::cout << unit << " metri patrati";
+                squareMeterToAcre(unit); break;
+            case 2:
+            std::cout << unit << " metri patrati";
+                squareMeterToSquareFoot(unit); break;
             default: break;
         }
 

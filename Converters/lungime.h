@@ -5,6 +5,7 @@
 #ifndef UNTITLED_LUNGIME_H
 #define UNTITLED_LUNGIME_H
 
-#endif //UNTITLED_LUNGIME_H
+void convertMetersToYards(double meters);
+void convertKilometersToMiles(double km);
 
-double convertMetersToYards(double meters);
+#endif //UNTITLED_LUNGIME_H

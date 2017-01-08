@@ -30,6 +30,7 @@ int main() {
         {
             case 1 : subOptions = {"Metri - Yards", "Kilometri - Mile"}; break;
             case 2 : subOptions = {"Metri Patrati - Acri", "Metri Patrati - Picioare Patrate"}; break;
+            case 3 : subOptions = { "Metru Cub - Galon (UK)", "Metru Cub - Yard Cub" }; break;
             case 5 : subOptions = {"Kilometri pe Ora - Mile pe Ora - Metri pe Secunda"};break;
             default: continue;
         }

@@ -5,6 +5,7 @@
 #include "utilities.h"
 #include "../Converters/lungime.h"
 #include "../Converters/arie.h"
+#include "../Converters/viteza.h"
 #include <iostream>
 
 
@@ -57,6 +58,7 @@ double treatSelectionCase(int mainCode, int subCode)
 
     if (mainCode == 3)
         switch(subCode){
+
             default: break;
         }
 
@@ -67,6 +69,10 @@ double treatSelectionCase(int mainCode, int subCode)
 
     if (mainCode == 5)
         switch(subCode){
+            case 1:
+                std::cout << unit << " kilometri pe ora";
+                kilometersPerHourToMilesPerHour(unit);
+                kilometersPerHourToMetersPerSecond(unit); break;
             default: break;
         }
 

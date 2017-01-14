@@ -7,6 +7,8 @@
 #include "../Converters/arie.h"
 #include "../Converters/viteza.h"
 #include "../Converters/volum.h"
+#include "../Converters/timp.h"
+
 #include <iostream>
 
 
@@ -52,6 +54,7 @@ double treatSelectionCase(int mainCode, int subCode) {
                 std::cout << unit << " metri patrati";
                 squareMeterToAcre(unit);
                 break;
+            // sqm to sqf
             case 2:
                 std::cout << unit << " metri patrati";
                 squareMeterToSquareFoot(unit);
@@ -62,10 +65,12 @@ double treatSelectionCase(int mainCode, int subCode) {
 
     if (mainCode == 3)
         switch (subCode) {
+            //mc to gallon
             case 1:
                 std::cout << unit << " metri cub";
                 cubicMeterToUKGalon(unit);
                 break;
+            //mc to ydc
             case 2:
                 std::cout << unit << " metri cub";
                 cubicMeterToCubicYard(unit);
@@ -77,6 +82,10 @@ double treatSelectionCase(int mainCode, int subCode) {
 
     if (mainCode == 4)
         switch (subCode) {
+            //secunde - ore
+            case 1:
+            std::cout << unit << " secunde";
+            secondsToHours(unit);
             default:
                 break;
         }

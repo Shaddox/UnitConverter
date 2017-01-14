@@ -30,8 +30,16 @@ int main() {
         {
             case 1 : subOptions = {"Metri - Yards", "Kilometri - Mile"}; break;
             case 2 : subOptions = {"Metri Patrati - Acri", "Metri Patrati - Picioare Patrate"}; break;
-            case 3 : subOptions = { "Metru Cub - Galon (UK)", "Metru Cub - Yard Cub" }; break;
+            case 3 : subOptions = {"Metru Cub - Galon (UK)", "Metru Cub - Yard Cub" }; break;
+            case 4 : subOptions = {"Secunde - Ore", "Ani - Ore"}; break;
             case 5 : subOptions = {"Kilometri pe Ora - Mile pe Ora - Metri pe Secunda"};break;
+            case 6 : subOptions = {"Grade Celsius - Grade Fahrenheit", "Grade Celsius - Grade Rankine"}; break;
+            case 7 : subOptions = {"Kilograme - Uncii (Troy)", "Kilograme - Funt"}; break;
+            case 8 : subOptions = {"Joule - BTU", "Joule - Kilocalorii"}; break;
+            case 9 : subOptions = {"Bar - Psi"}; break;
+            case 10 : subOptions = {"Kilogram pe Metru Cub - Gram pe Centimetru Cub", "Kilogram pe Metru Cub - Uncie pe Galon (UK)"}; break;
+            case 11 : subOptions = {"Litri pe 100km - Mile la Galon - Kilometru la Litru"}; break;
+
             default: continue;
         }
 //        if (code == optiuni.size()) { break;}

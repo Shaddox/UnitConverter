@@ -14,5 +14,5 @@ void convertMetersToYards(double meters)
 
 void convertKilometersToMiles(double km)
 {
-    std::cout << mesaj <<  km * 0.621371192237334 << " mile " << std::endl;
+    std::cout << mesaj <<  km * 0.621371192237334 << " mile" << std::endl;
 }

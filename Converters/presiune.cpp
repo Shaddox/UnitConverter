@@ -7,4 +7,6 @@
 
 void barToPsi(double bar) {
 
+    std::cout << mesaj << bar * 14.5037738 << " PSI" << std::endl;
+
 }

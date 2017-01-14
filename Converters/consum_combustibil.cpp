@@ -4,3 +4,11 @@
 
 #include "consum_combustibil.h"
 #include "../Utils/global.h"
+
+void litresPer100kmToMilesPerGallon(double lp100) {
+
+}
+
+void litresPer100kmToKmPerLitre(double lp100) {
+
+}

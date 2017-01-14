@@ -8,6 +8,12 @@
 #include "../Converters/viteza.h"
 #include "../Converters/volum.h"
 #include "../Converters/timp.h"
+#include "../Converters/consum_combustibil.h"
+#include "../Converters/densitate.h"
+#include "../Converters/energie.h"
+#include "../Converters/masa.h"
+#include "../Converters/presiune.h"
+#include "../Converters/temperatura.h"
 
 #include <iostream>
 
@@ -86,12 +92,19 @@ double treatSelectionCase(int mainCode, int subCode) {
             case 1:
             std::cout << unit << " secunde";
             secondsToHours(unit);
+                break;
+                //ani - ore
+            case 2:
+            std::cout << unit << " ani";
+                yearsToHours(unit);
+                break;
             default:
                 break;
         }
 
     if (mainCode == 5)
         switch (subCode) {
+            //kmh - mph - mps
             case 1:
                 std::cout << unit << " kilometri pe ora";
                 kilometersPerHourToMilesPerHour(unit);
@@ -103,36 +116,87 @@ double treatSelectionCase(int mainCode, int subCode) {
 
     if (mainCode == 6)
         switch (subCode) {
+            //celsius - fahrenheit
+            case 1:
+            std::cout << unit << " grade celsius";
+                celsiusToFahrenheit(unit);
+                break;
+                //celsius - rakine
+            case 2:
+            std::cout << unit << " grade celsius";
+                celsiusToRankine(unit);
+                break;
             default:
                 break;
         }
 
     if (mainCode == 7)
         switch (subCode) {
+            //kg - ounces troy
+            case 1:
+            std::cout << unit << " kilograme";
+                kilogramsToTroyOunces(unit);
+                break;
+                //kg - funt
+            case 2:
+            std::cout << unit << " kilograme";
+                kilogramsToFunts(unit);
+                break;
             default:
                 break;
         }
 
     if (mainCode == 8)
         switch (subCode) {
+            //joule - btu
+            case 1:
+                std::cout << unit << " jouli";
+                jouleToBTU(unit);
+                break;
+                //joule - kcal
+            case 2:
+            std::cout << unit << " jouli";
+                jouleToKilocalories(unit);
+                break;
             default:
                 break;
         }
 
     if (mainCode == 9)
         switch (subCode) {
+            //bar - psi
+            case 1:
+            std::cout << unit << " bari";
+                barToPsi(unit);
+                break;
             default:
                 break;
         }
 
     if (mainCode == 10)
         switch (subCode) {
+            // kgmc - gcc
+            case 1:
+            std::cout << unit << " kilograme pe metru cub";
+                kilogramPerCubicMeterToGramPerCubicCentimeter(unit);
+                break;
+                //kgmc - uncii pe galon uk
+            case 2:
+            std::cout << unit << " kilograme pe metru cub";
+                kilogramPerCubicMeterToOuncePerGallonUK(unit);
+                break;
             default:
                 break;
         }
 
     if (mainCode == 11)
         switch (subCode) {
+            // l/100km - mile/galon - km/l
+            case 1:
+            std::cout << unit << " litri pe 100km";
+                litresPer100kmToMilesPerGallon(unit);
+                litresPer100kmToKmPerLitre(unit);
+                break;
             default:
                 break;
         }

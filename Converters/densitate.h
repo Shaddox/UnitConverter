@@ -5,7 +5,7 @@
 #ifndef UNTITLED_DENSITATE_H
 #define UNTITLED_DENSITATE_H
 
-void kilogramPerCubicMeterToGramPerCubicMeter(double kgpcm);
+void kilogramPerCubicMeterToGramPerCubicCentimeter(double kgpcm);
 void kilogramPerCubicMeterToOuncePerGallonUK(double kgpcm);
 
 #endif //UNTITLED_DENSITATE_H

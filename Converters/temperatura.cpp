@@ -4,3 +4,11 @@
 
 #include "temperatura.h"
 #include "../Utils/global.h"
+
+void celsiusToFahrenheit(double celsius) {
+
+}
+
+void celsiusToRankine(double celsius) {
+
+}

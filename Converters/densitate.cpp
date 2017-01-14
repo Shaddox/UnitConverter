@@ -4,3 +4,11 @@
 
 #include "densitate.h"
 #include "../Utils/global.h"
+
+void kilogramPerCubicMeterToGramPerCubicCentimeter(double kgpcm) {
+
+}
+
+void kilogramPerCubicMeterToOuncePerGallonUK(double kgpcm) {
+
+}

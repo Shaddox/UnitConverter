@@ -4,3 +4,11 @@
 
 #include "masa.h"
 #include "../Utils/global.h"
+
+void kilogramsToTroyOunces(double kg) {
+
+}
+
+void kilogramsToFunts(double kg) {
+
+}

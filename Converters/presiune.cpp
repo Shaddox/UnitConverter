@@ -4,3 +4,7 @@
 
 #include "presiune.h"
 #include "../Utils/global.h"
+
+void barToPsi(double bar) {
+
+}
